@@ -1,8 +1,8 @@
 import React from "react";
-import { Loading } from "./LoadingPage/Loading";
+import Content from "./PageHandler";
 
 function App() {
-  return <Loading />;
+  return <Content />;
 }
 
 export default App;
