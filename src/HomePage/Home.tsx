@@ -12,6 +12,9 @@ export const Home: React.FC<HomeProps> = ({}) => {
         className="Home-Header"
         height="2.5em"
       />
+      <div className="Home-Content">
+        <h1>Home Page</h1>
+      </div>
     </>
   );
 };
