@@ -1,8 +1,10 @@
 import React from "react";
 import Content from "./PageHandler";
+import { Home } from "./HomePage/Home";
 
 function App() {
-  return <Content />;
+  const isProd = !true;
+  return <>{isProd ? <Content /> : <Home />}</>;
 }
 
 export default App;

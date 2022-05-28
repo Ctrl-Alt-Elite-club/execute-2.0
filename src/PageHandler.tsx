@@ -1,4 +1,5 @@
 import React from "react";
+import { Home } from "./HomePage/Home";
 import { Loading } from "./LoadingPage/Loading";
 
 interface HandleState {
@@ -16,11 +17,11 @@ class Content extends React.Component<{}, HandleState> {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 4420);
+    }, Math.floor(Math.random() * 9000) + 1000);
   }
 
   render() {
-    return <>{this.state.loading ? <Loading /> : <div>Hello World</div>}</>;
+    return <>{this.state.loading ? <Loading /> : <Home />}</>;
   }
 }
 
