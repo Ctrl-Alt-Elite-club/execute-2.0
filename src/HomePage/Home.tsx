@@ -8,7 +8,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
   return (
     <>
       <Header
-        title="Welcome Back, {username}"
+        title="Welcome Back, My lil sussy baka"
         className="Home-Header"
         height="2.5em"
       />
